@@ -10,49 +10,31 @@ A .NET module for IIS which removes unwanted HTTP headers from the server respon
 Deploy the `Pingfu.RemoveServerHeaderModule.dll` library to the .NET Global Assembly Cache (GAC) using the `gacutil.exe` tools. The tool is included with Visual Studio (as part of the Microsoft SDK) and the .Net framework (v1 and 1.1 only!). You might be in one of (or more!) the following locations on your server:
 
 ```
-%programfiles%\Microsoft Visual Studio .NET 2003\SDK\v1.1\Bin\gacutil.exe /i <assemblyPath>\Pingfu.RemoveServerHeaderModule.dll
-%programfiles%\Microsoft SDKs\Windows\v6.0\Bin\gacutil.exe /i <assemblyPath>
-%programfiles%\Microsoft SDKs\Windows\v6.0A\Bin\gacutil.exe /i <assemblyPath>
-%windir%\Microsoft.NET\Framework\v1.0.3705\gacutil.exe /i <assemblyPath>
-%windir%\Microsoft.NET\Framework\v1.1.4322\gacutil.exe /i <assemblyPath>
+%programfiles%\Microsoft Visual Studio .NET 2003\SDK\v1.1\Bin\gacutil.exe
+%programfiles%\Microsoft SDKs\Windows\v6.0\Bin\gacutil.exe
+%programfiles%\Microsoft SDKs\Windows\v6.0A\Bin\gacutil.exe
+%windir%\Microsoft.NET\Framework\v1.0.3705\gacutil.exe
+%windir%\Microsoft.NET\Framework\v1.1.4322\gacutil.exe
 ```
 
-* gacutil.exe command documentation: http://msdn.microsoft.com/en-us/library/ex0ss12c.aspx
+* gacutil.exe MSDN documentation: http://msdn.microsoft.com/en-us/library/ex0ss12c.aspx
 
 Install the library to the GAC using the `/i` argument:
 
 ```
-gacutil.exe /i <assemblyPath>\Pingfu.RemoveServerHeaderModule.dll
+> gacutil.exe /i Pingfu.RemoveServerHeaderModule.dll
 ```
-
-### Load the module in IIS
 
 Once the dll has been installed to the GAC, the downloaded version can be removed from the server.
 
-```
-Configure IIS
-At the Root Level goto 
-	-> Modules
-		-> Add Managed Module
-			Give it a name, for example "Pingfu.RemoveServerHeaderModule" and select it from the list.
-```
+### Load the module in IIS
 
-Configure IIS Crypto libraries
+1. Open the __Internet Information Services (IIS) Mananger__ snap-in and navigate to the top-level web server home node (usually the first element listed under 'Start Page').
+2. Open the Modules administration feature.
+3. Select __Add Managed Module...__.
+4. In the "Add Mananaged Module" window give the module a `Name`, for example "Pingfu.RemoveServerHeaderModule" and select the module from the `Type` list.
 
-https://www.nartac.com/Products/IISCrypto/Default.aspx
-
-Test SSL cipher support
-
-https://www.ssllabs.com/ssltest/index.html
-
-
-
-
-
-
-
-
-## Secure web.config
+## Securing web.config
 
 ### Hardening Web.Config
 #### Disable tracing
@@ -134,6 +116,7 @@ http://msdn.microsoft.com/en-us/library/vstudio/ms228262(v=vs.100).aspx
     <remove statusCode="403" subStatusCode="-1" />
     <remove statusCode="401" subStatusCode="-1" />
     <remove statusCode="400" subStatusCode="-1" />
+	
     <error statusCode="400" subStatusCode="-1" path="/error-handler.aspx" prefixLanguageFilePath="" responseMode="ExecuteURL" />
     <error statusCode="401" subStatusCode="-1" path="/error-handler.aspx" prefixLanguageFilePath="" responseMode="ExecuteURL" />
     <error statusCode="402" subStatusCode="-1" path="/error-handler.aspx" prefixLanguageFilePath="" responseMode="ExecuteURL" />
@@ -245,7 +228,7 @@ http://msdn.microsoft.com/en-us/library/vstudio/ms228262(v=vs.100).aspx
 </system.webServer>
 ```
 
-### Hardened Web.Config Template
+## Hardened Web.Config Template
 
 ```xml
 <system.web>
@@ -293,6 +276,7 @@ http://msdn.microsoft.com/en-us/library/vstudio/ms228262(v=vs.100).aspx
     <remove statusCode="403" subStatusCode="-1" />
     <remove statusCode="401" subStatusCode="-1" />
     <remove statusCode="400" subStatusCode="-1" />
+	
     <error statusCode="400" subStatusCode="-1" path="/error-handler.aspx" prefixLanguageFilePath="" responseMode="ExecuteURL" />
     <error statusCode="401" subStatusCode="-1" path="/error-handler.aspx" prefixLanguageFilePath="" responseMode="ExecuteURL" />
     <error statusCode="402" subStatusCode="-1" path="/error-handler.aspx" prefixLanguageFilePath="" responseMode="ExecuteURL" />
@@ -394,5 +378,11 @@ http://msdn.microsoft.com/en-us/library/vstudio/ms228262(v=vs.100).aspx
 
 </system.webServer>
 ```
+
+## SSL/TLS Security
+
+1. Use the IISCrypto tool to lock down which protocols and algorithms are available for session negotiation https://www.nartac.com/Products/IISCrypto/Default.aspx
+
+2. Test the SSL cipher the webserver is exposing using the Qualys SSL Labs testing tool https://www.ssllabs.com/ssltest/index.html
 
 
