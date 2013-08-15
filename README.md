@@ -385,6 +385,6 @@ http://msdn.microsoft.com/en-us/library/vstudio/ms228262(v=vs.100).aspx
 
 1. Use the IISCrypto tool to lock down which protocols and algorithms are available for session negotiation https://www.nartac.com/Products/IISCrypto/Default.aspx
 
-2. Test the SSL cipher the webserver is exposing using the Qualys SSL Labs testing tool https://www.ssllabs.com/ssltest/index.html
+2. Test the available SSL cipher suites using Qualys SSL Labs testing tool https://www.ssllabs.com/ssltest/index.html
 
 
