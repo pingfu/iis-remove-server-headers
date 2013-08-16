@@ -3,6 +3,13 @@ iis-remove-server-headers
 
 A .NET module for IIS which removes unwanted HTTP headers from the server response.
 
+## Download
+
+Binaries pre-compiled for use with .net framework version 2.0 are available;
+
+* [Pingfu.RemoveServerHeaderModule-1.0.0-x86.msi.zip](https://s3-eu-west-1.amazonaws.com/pingfu/remove-server-header-module/Pingfu.RemoveServerHeaderModule-1.0.0-x86.msi.zip) 32 bit [144 KB]
+* [Pingfu.RemoveServerHeaderModule-1.0.0-x64.msi.zip](https://s3-eu-west-1.amazonaws.com/pingfu/remove-server-header-module/Pingfu.RemoveServerHeaderModule-1.0.0-x64.msi.zip) 64 bit [144 KB]
+
 ## Installation
 
 ### Install to the GAC
