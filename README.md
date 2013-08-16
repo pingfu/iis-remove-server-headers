@@ -16,15 +16,12 @@ Deploy the library to the .NET Global Assembly Cache (GAC) using `gacutil.exe`.
 Once the library is installed to the GAC, any other copies can be removed from the server.
 
 * MSDN documentation: http://msdn.microsoft.com/en-us/library/ex0ss12c.aspx
-* __gacutil.exe__ is included with Visual Studio (as part of the Microsoft SDK) and the .Net framework (v1 and 1.1), and is usually in one, or more of the following locations:
-
-```
-%programfiles%\Microsoft Visual Studio .NET 2003\SDK\v1.1\Bin\gacutil.exe
-%programfiles%\Microsoft SDKs\Windows\v6.0\Bin\gacutil.exe
-%programfiles%\Microsoft SDKs\Windows\v6.0A\Bin\gacutil.exe
-%windir%\Microsoft.NET\Framework\v1.0.3705\gacutil.exe
-%windir%\Microsoft.NET\Framework\v1.1.4322\gacutil.exe
-```
+* gacutil.exe is included with Visual Studio and v1.1 of the .net framework, usually in one of the following locations:
+  * `%programfiles%\Microsoft Visual Studio .NET 2003\SDK\v1.1\Bin\gacutil.exe`
+  * %programfiles%\Microsoft SDKs\Windows\v6.0\Bin\gacutil.exe
+  * %programfiles%\Microsoft SDKs\Windows\v6.0A\Bin\gacutil.exe
+  * %windir%\Microsoft.NET\Framework\v1.0.3705\gacutil.exe
+  * %windir%\Microsoft.NET\Framework\v1.1.4322\gacutil.exe
 
 ### Load the module in IIS
 
