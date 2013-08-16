@@ -21,7 +21,6 @@ namespace Pingfu.RemoveServerHeaderModule
             headers.Add("Server");
             headers.Add("X-Powered-By");
             headers.Add("X-AspNet-Version");
-            headers.Add("Server");
 
             context.PreSendRequestHeaders += OnPreSendRequestHeaders;
         }
