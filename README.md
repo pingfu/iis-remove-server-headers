@@ -28,8 +28,9 @@ Once the library is installed to the GAC, any other copies can be removed from t
 
 ### Load the module in IIS
 
-1. Open the __Internet Information Services (IIS) Mananger__ snap-in and navigate to the web server top-level node in the tree (usually the first element listed under 'Start Page').
-2. Open the __Modules__ administration feature.
+1. Open the __Internet Information Services (IIS) Mananger__ snap-in.
+2. Open the __Modules__ administration feature at the server level.
 3. Select __Add Managed Module...__.
-4. In the "Add Mananaged Module" window give the module a `Name`, for example "Pingfu.RemoveServerHeaderModule" and select the module from the `Type` list.
+  * For `Name` enter a descriptive name, for example "Pingfu.RemoveServerHeaderModule"
+  * For `Type` select the module from the list.
 
