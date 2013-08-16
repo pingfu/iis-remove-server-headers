@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Pingfu.RemoveServerHeaderModule</RootNamespace>
-    <AssemblyName>Pingfu.RemoveServerHeaderModule</AssemblyName>
+    <AssemblyName>Pingfu.RemoveServerHeaderModule-1.0.0</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>

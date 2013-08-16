@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveServerHeaderModule", "RemoveServerHeaderModule\RemoveServerHeaderModule.csproj", "{848AA86D-8D42-4ED5-9CED-159968F29AFD}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{581573E0-7D83-4A98-BCA1-683BAA0B89D3}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup (x64)", "Setup (x64)\Setup (x64).vdproj", "{4FC328AD-772C-4EF9-BCB2-BE7228205D33}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup (x86)", "Setup (x86)\Setup.vdproj", "{C70BC93A-6701-433C-8092-864348F69AF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,12 @@ Global
 		{848AA86D-8D42-4ED5-9CED-159968F29AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{848AA86D-8D42-4ED5-9CED-159968F29AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{848AA86D-8D42-4ED5-9CED-159968F29AFD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{581573E0-7D83-4A98-BCA1-683BAA0B89D3}.Debug|Any CPU.ActiveCfg = Debug
-		{581573E0-7D83-4A98-BCA1-683BAA0B89D3}.Release|Any CPU.ActiveCfg = Release
+		{4FC328AD-772C-4EF9-BCB2-BE7228205D33}.Debug|Any CPU.ActiveCfg = Debug
+		{4FC328AD-772C-4EF9-BCB2-BE7228205D33}.Release|Any CPU.ActiveCfg = Release
+		{C70BC93A-6701-433C-8092-864348F69AF7}.Debug|Any CPU.ActiveCfg = Debug
+		{C70BC93A-6701-433C-8092-864348F69AF7}.Debug|Any CPU.Build.0 = Debug
+		{C70BC93A-6701-433C-8092-864348F69AF7}.Release|Any CPU.ActiveCfg = Release
+		{C70BC93A-6701-433C-8092-864348F69AF7}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
