@@ -7,9 +7,11 @@ A .NET module for IIS which removes unwanted HTTP headers from the server respon
 
 ### Install to the GAC
 
-Deploy the `Pingfu.RemoveServerHeaderModule.dll` library to the .NET Global Assembly Cache (GAC) using the `gacutil.exe` tools. The tool is included with Visual Studio (as part of the Microsoft SDK) and the .Net framework (v1 and 1.1 only!).
+Deploy the `Pingfu.RemoveServerHeaderModule.dll` library to the .NET Global Assembly Cache (GAC) using the `gacutil.exe` tools.
 
-You might find the `gacutil.exe` in one, or more of the following locations:
+The tool is included with Visual Studio (as part of the Microsoft SDK) and the .Net framework (v1 and 1.1).
+
+`gacutil.exe` might be found in one, or more of the following locations:
 
 ```
 %programfiles%\Microsoft Visual Studio .NET 2003\SDK\v1.1\Bin\gacutil.exe
@@ -19,7 +21,7 @@ You might find the `gacutil.exe` in one, or more of the following locations:
 %windir%\Microsoft.NET\Framework\v1.1.4322\gacutil.exe
 ```
 
-* gacutil.exe MSDN documentation: http://msdn.microsoft.com/en-us/library/ex0ss12c.aspx
+* MSDN documentation: http://msdn.microsoft.com/en-us/library/ex0ss12c.aspx
 
 Install the library to the GAC using the `/i` argument:
 
