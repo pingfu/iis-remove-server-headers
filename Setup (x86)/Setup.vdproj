@@ -33,7 +33,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\Pingfu.RemoveServerHeaderModule-1.0.0-x86.msi"
+        "OutputFilename" = "8:Debug\\Pingfu.RemoveServerHeaderModule-1.0.1-x86.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -70,7 +70,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\Pingfu.RemoveServerHeaderModule-1.0.0-x86.msi"
+        "OutputFilename" = "8:Release\\Pingfu.RemoveServerHeaderModule-1.0.1-x86.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -87,6 +87,19 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0,Profile=Client"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4 Client Profile (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
             }
         }
     }
@@ -162,15 +175,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:RemoveServerHeaderModule Setup (x86)"
-        "ProductCode" = "8:{B7D8394D-99D1-4BC3-AEFA-34843AC59C62}"
-        "PackageCode" = "8:{0CA71E99-2EA8-4FBD-9D48-86412450D3E9}"
+        "ProductCode" = "8:{3DAC8F1C-0A8A-4862-A83E-343232490C35}"
+        "PackageCode" = "8:{989134FE-4222-4675-BAFB-E820E9F041A4}"
         "UpgradeCode" = "8:{EE4EB054-E0CE-42B3-8204-7BE6639CC805}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.1"
         "Manufacturer" = "8:Pingfu"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -487,7 +500,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_4652EBFF66CC473F91B6C912C626B249"
             {
-            "SourcePath" = "8:..\\RemoveServerHeaderModule\\obj\\Release\\Pingfu.RemoveServerHeaderModule.dll"
+            "SourcePath" = "8:..\\RemoveServerHeaderModule\\obj\\Debug\\Pingfu.RemoveServerHeaderModule-1.0.1.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_6E6044FEB9C446F5BFD8099ED9E3868E"
