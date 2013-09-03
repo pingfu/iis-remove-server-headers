@@ -6,6 +6,7 @@ A .NET module for IIS which removes the following unwanted HTTP headers from the
 * `Server:`
 * `X-Powered-By`
 * `X-AspNet-Version`
+* `X-AspNetMvc-Version`
 
 ## Download
 
