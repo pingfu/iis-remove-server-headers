@@ -12,14 +12,19 @@ A .NET module for IIS which removes the following unwanted HTTP headers from the
 
 Either compile from source, or the following pre-compiled binaries are available for use with IIS where version 2.0 of the .net framework is installed;
 
-* [Pingfu.RemoveServerHeaderModule-1.0.0-x86.msi.zip](https://s3-eu-west-1.amazonaws.com/pingfu/remove-server-header-module/Pingfu.RemoveServerHeaderModule-1.0.0-x86.msi.zip) (144 KB)
+* [Pingfu.RemoveServerHeaderModule-1.0.0-x86.msi.zip](https://s3-eu-west-1.amazonaws.com/pingfu/remove-server-header-module/Pingfu.RemoveServerHeaderModule-1.0.1-x86.msi.zip) (144.9 KB)
 
-  MD5: `a037c6b4b2a2d90c7043edcf0120b26d`
+  MD5: `b4a73601d32961577843d74a80f8ef0b`
   
-* [Pingfu.RemoveServerHeaderModule-1.0.0-x64.msi.zip](https://s3-eu-west-1.amazonaws.com/pingfu/remove-server-header-module/Pingfu.RemoveServerHeaderModule-1.0.0-x64.msi.zip) (144 KB)
+* [Pingfu.RemoveServerHeaderModule-1.0.0-x64.msi.zip](https://s3-eu-west-1.amazonaws.com/pingfu/remove-server-header-module/Pingfu.RemoveServerHeaderModule-1.0.1-x64.msi.zip) (144.9 KB)
 
-  MD5: `8b839cf4c91f2e7d2543f0e374417cf7`
+  MD5: `67aa08a64622da45866a27673e2a8bcf`
 
+Old Versions
+
+* [Pingfu.RemoveServerHeaderModule-1.0.0-x86.msi.zip](https://s3-eu-west-1.amazonaws.com/pingfu/remove-server-header-module/Pingfu.RemoveServerHeaderModule-1.0.0-x86.msi.zip) (144.8 KB - 16/08/2013)
+* [Pingfu.RemoveServerHeaderModule-1.0.0-x64.msi.zip](https://s3-eu-west-1.amazonaws.com/pingfu/remove-server-header-module/Pingfu.RemoveServerHeaderModule-1.0.0-x64.msi.zip) (144.8 KB - 16/08/2013)
+  
 ## Installation to the GAC
 
 Deploy the library to the .NET Global Assembly Cache (GAC) using `gacutil.exe`.
