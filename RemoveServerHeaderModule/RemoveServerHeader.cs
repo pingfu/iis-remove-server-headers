@@ -57,6 +57,5 @@ namespace Pingfu.RemoveServerHeaderModule
         {
             // nothing to dispose
         }
-
     }
 }
