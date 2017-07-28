@@ -27,7 +27,7 @@ Roles and Features
 
 Additionally, if the module does not remove the `X-Powered-By` header, you can remove it using `Web.Config`
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
 	<system.webServer>
