@@ -10,7 +10,7 @@ A .NET module for IIS which removes the following unwanted HTTP headers from the
 
 ## How to use
 
-1. [Download and use the MSI to install the module into the GAC](#Download)
+1. [Download and use the MSI to install the module into the GAC](#download)
 2. [Configure IIS to use the module](#Configure IIS)
 
 ### A note on compatability
