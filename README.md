@@ -1,7 +1,7 @@
 IIS Remove Server Headers
 =========================
 
-A .NET module for IIS which removes the following unwanted HTTP headers from the server response.
+A managed .NET module for IIS which removes the following unwanted HTTP headers from the server response.
 
 * `Server:`
 * `X-Powered-By`
