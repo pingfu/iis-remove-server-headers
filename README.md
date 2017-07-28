@@ -8,6 +8,38 @@ A .NET module for IIS which removes the following unwanted HTTP headers from the
 * `X-AspNet-Version`
 * `X-AspNetMvc-Version`
 
+## How to use
+
+1. [Download and use the MSI to install the module into the GAC](#Download)
+2. [Configure IIS to use the module](#Configure IIS)
+
+### A note on compatability
+
+For Windows Server 2016 you may need to install the ISAPI Filters role for the module to work.
+
+```
+Roles and Features
+	Web Server (IIS)
+		Web Server
+			Application Development
+				+ ISAPI Filters
+```
+
+Additionally, if the module does not remove the `X-Powered-By` header, you can remove it using `Web.Config`
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<system.webServer>
+		<httpProtocol>
+			<customHeaders>
+				<remove name="X-Powered-By" />
+			</customHeaders>
+		</httpProtocol>
+	</system.webServer>
+</configuration>
+```
+
 ## Download
 
 Either compile from source, or download the pre-compiled binaries for use where IIS version 2.0 or greater of the .net framework is available;
@@ -43,7 +75,7 @@ Once the library is installed to the GAC, any other copies can be removed from t
   * %windir%\Microsoft.NET\Framework\v1.0.3705\gacutil.exe
   * %windir%\Microsoft.NET\Framework\v1.1.4322\gacutil.exe
 
-## Configure IIS to use the module
+## Configure IIS
 
 1. Open the __Internet Information Services (IIS) Mananger__ snap-in.
 2. Open the __Modules__ administration feature at the server level.
