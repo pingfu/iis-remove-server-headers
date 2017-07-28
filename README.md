@@ -57,7 +57,7 @@ Old Versions
 * [Pingfu.RemoveServerHeaderModule-1.0.0-x86.msi.zip](https://s3-eu-west-1.amazonaws.com/pingfu/remove-server-header-module/Pingfu.RemoveServerHeaderModule-1.0.0-x86.msi.zip) (144.8 KB - 16/08/2013)
 * [Pingfu.RemoveServerHeaderModule-1.0.0-x64.msi.zip](https://s3-eu-west-1.amazonaws.com/pingfu/remove-server-header-module/Pingfu.RemoveServerHeaderModule-1.0.0-x64.msi.zip) (144.8 KB - 16/08/2013)
   
-## Installation to the GAC
+## Manually Install to the GAC
 
 Deploy the library to the .NET Global Assembly Cache (GAC) using `gacutil.exe`.
 
